@@ -13,12 +13,6 @@ export const TopBar = () => {
           <Navbar.Brand href="/">Hello FCL</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-          {/* <Nav.Link href="/ufc">UFC</Nav.Link> */}
-          {/* <Nav.Link href="/nfl">NFL</Nav.Link> */}
-          {/*<Nav.Link href="/nba">TopShot</Nav.Link>*/}
-          {/*<Nav.Link href="/vanilla">VanillaAsh</Nav.Link>*/}
-          {/* <Nav.Link href="/vanillaTS">TSToAsh1</Nav.Link> */}
-          {/*<Nav.Link href="/faq">FAQ</Nav.Link>*/}
           <Nav.Link href="/hello">Hello</Nav.Link>
 
 
