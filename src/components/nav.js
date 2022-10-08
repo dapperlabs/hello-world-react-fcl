@@ -7,6 +7,15 @@ export const TopBar = () => {
     const [user, setUser] = useState({ loggedIn: null })
     useEffect(() => fcl.currentUser.subscribe(setUser), [])
 
+    const login=(useDapper) => () => {
+        if (useDapper) {
+            fcl.config.put("discovery.wallet", "https://accounts.meetdapper.com/fcl/authn-restricted")
+        } else {
+            fcl.config.put("discovery.wallet", "https://fcl-discovery.onflow.org/authn")
+        }
+        fcl.logIn()
+    }
+
     return (
         <Navbar bg="light" expand="lg">
         <Container>
@@ -27,9 +36,8 @@ export const TopBar = () => {
               </Navbar.Collapse>
               :
               <Navbar.Collapse className="justify-content-end">
-                <Nav.Link onClick={fcl.logIn}>Login</Nav.Link>
-                <Nav.Link onClick={fcl.signUp}>SignUp</Nav.Link>
-
+                  <Nav.Link onClick={login(true)}>Login Dapper</Nav.Link>
+                  <Nav.Link onClick={login(false)}>Login Other</Nav.Link>
               </Navbar.Collapse>
 
           }

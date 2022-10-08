@@ -8,7 +8,7 @@ var c = config({
   // "accessNode.api": "https://access-mainnet-beta.onflow.org", // Mainnet grpc web
 
   // "discovery.wallet": "https://fcl-discovery.onflow.org/authn", // Mainnet blocto
-  "discovery.wallet": "https://accounts.meetdapper.com/fcl/authn-restricted", // Mainnet dapper
+  // "discovery.wallet": "https://accounts.meetdapper.com/fcl/authn-restricted", // Mainnet dapper
   // "discovery.wallet": "https://fcl-discovery.onflow.org/testnet/authn", // Testnet blocto
   // "discovery.wallet": "https://staging.accounts.meetdapper.com/fcl/authn-restricted", // Testnet dapper
   // "discovery.wallet": "http://localhost:8002/fcl/authn?localUrl=https://localhost:4000/", // Local
