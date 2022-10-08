@@ -1,6 +1,7 @@
 import * as fcl from "@onflow/fcl";
 
 export const newFlowLogTransaction = async(msg, setTxID) => {
+    // modifications of this transaction content needs to be approved by Dapper for dapper wallet tx executions
     let txID = await fcl.mutate({
         cadence: `import Logger from 0xLOGGERADDRESS
     transaction(msg: String) {
